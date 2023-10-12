@@ -19,3 +19,31 @@ Next, the tumor volume data was summarized in terms of mean, median, variance, s
 <summary_stats_df>
 
 <h4>Data Visualization</h4>
+Using the original data and leaving out data for mouse g989, a bar graph showing the number of mice that were involved in each drug trial was created using Matplotlib.
+<number_of_mice_tested>
+
+A pie chart showing the sex of the mice in the trial was then generated using the original mouse metadata. 
+<mice_sex>
+
+In order to analyze the final results of the study, the 'merged_data' dataframe was altered such that only the final tumor volume measurement was included. This data was then stored in the 'max_time_data' data frame.
+<final_timepoint>
+
+The final tumor volumes for each mouse that underwent treatment with the drugs 'Capomulin', 'Ramicane', 'Infubinol', and 'Ceftamin' were then gathered from the 'max_time_data' dataframe and stored in 'tumor' dataframe.
+<final_tumor_volume>
+<final_tumor_volume_df>
+
+In order to test for outliers in the tumor volume data in the 'tumor' dataframe, the upper and lower quartiles and the interquartile range were calculated. For the purposes of this analysis, an outlier is defined as any data point whose value is greater or less than the the upper or lower quartiles, respectively, by at least a factor of 1.5 times the interquartile range.
+<IQR>
+<outliers>
+
+As shown in the screenshot above, only one outlier, belonging to the Infubinol dataset was found. This was confirmed by plotting the data from the 'tumor' dataframe in a box and whisker plot.
+<box_whisker>
+
+Next, mouse l509 was singled out in order to analyze the effects of a Capomulin treatment regime. 
+<capo_treatment>
+
+The 'merged_data' dataframe was then filtered for mice who underwent the Capomulin treatment regime. The mean tumor volume was then calculated for each mouse in the regime and stored in the 'cap2' dataframe. The aggreagated tumor volume was then plotted on a scatter plot.
+<capo_scatter>
+<capo_treatment_all>
+
+<h4>Correlation Testing</h4>
