@@ -47,3 +47,16 @@ The 'merged_data' dataframe was then filtered for mice who underwent the Capomul
 <capo_treatment_all>
 
 <h4>Correlation Testing</h4>
+First, linear regression analysis was used to determine the r-value, p-value, and standard error of the mean for the tumor volume data in the Capomulin drug trials.
+<capo_stats>
+
+Next, the line of best fit from the linear regression was plotted over the previous scatter plot.
+<capo_linear>
+
+<h4>Conclusions</h4>
+
+# Mice who underwent treatment with Capomulin had, on average, a significantly smaller final tumor volume than mice who underwent treatment with Ceftamin or Infubinol. However, the mice who were treated with Capomulin had roughly the same final tumor volume as those treated with Ramicane. This data, illustrated in the box and whisker plot, may be skewed by the fact that only the final recorded time point for each mouse was taken into account. This final recorded time point varied greatly from mouse to mouse, with some final timepoints being as low as 0, while others were as high as 45. This skew appears to be least present in the data for mice treated with Capomulin as evidenced by the fact that the lowest maximum time point value for mice in this regiment is 10. Further analysis of the final timepoints would be necessary in order to make a more definitive statement.
+
+# Mouse l509 was singled out for an analysis of how its tumor volume progressed over time. Mouse l509 was an ideal candidate for such an analysis because its tumor volume was measured throughout the entire range of time points (0 - 45). Although the tumor volume increased between time points 0 and 20, it decreased drastically in the remainder of the time frame. In the course of the study, the initial tumor volume of mouse l509 decreased by 7.8% (45 mm3 at time point 0 and 41.5 mm3 at time point 45). Although this decrease suggests that the Capomulin regimen helped to reduce tumor volume for mouse l509, it is not certain that other factors did not play a role in the measured decrease. A further analysis and comparison of other individual mice who were treated with Capomulin from time point 0 to time point 45 would provide more meaningful insight into the efficacy of Capomulin.
+
+# As evidenced by a correlation coefficient value, r, of 0.842. there is a strong positive correlation between the weight of a mouse treated with Capomulin and its average tumor volume. This implies that the efficacy of Capomulin correlates negatively with the weight of the mouse being treated. A closer look at the statistical analysis reveals that this dataset is reliable. This dataset has a p-value of only 1.32 x 10-7, meaning that the data is statistically significant. The data also has a relatively low standard error of 0.128, meaning that the mean of this sample only differs from the mean of the population by 0.128.
