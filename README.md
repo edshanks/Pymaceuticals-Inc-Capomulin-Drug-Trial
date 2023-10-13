@@ -20,15 +20,19 @@ Next, the tumor volume data was summarized in terms of mean, median, variance, s
 
 <h4>Data Visualization</h4>
 Using the original data and leaving out data for mouse g989, a bar graph showing the number of mice that were involved in each drug trial was created using Matplotlib.<br>
+
 ![](screenshots/number_of_mice_tested.png)<br>
 
 A pie chart showing the sex of the mice in the trial was then generated using the original mouse metadata. <br>
+
 ![](screenshots/mice_sex.png)<br>
 
 In order to analyze the final results of the study, the 'merged_data' dataframe was altered such that only the final tumor volume measurement was included. This data was then stored in the 'max_time_data' data frame.<br>
+
 ![](screenshots/final_timepoint.png)<br>
 
 The final tumor volumes for each mouse that underwent treatment with the drugs 'Capomulin', 'Ramicane', 'Infubinol', and 'Ceftamin' were then gathered from the 'max_time_data' dataframe and stored in 'tumor' dataframe. <br>
+
 ![](screenshots/final_tumor_volume.png)<br>
 
 ![](screenshots/final_tumor_volume_df.png)<br>
@@ -36,6 +40,7 @@ The final tumor volumes for each mouse that underwent treatment with the drugs '
 In order to test for outliers in the tumor volume data in the 'tumor' dataframe, the upper and lower quartiles and the interquartile range were calculated. For the purposes of this analysis, an outlier is defined as any data point whose value is greater or less than the the upper or lower quartiles, respectively, by at least a factor of 1.5 times the interquartile range.<br>
 
 ![](screenshots/IQR.png)<br>
+
 ![](screenshots/outliers.png)<br>
 
 As shown in the screenshot above, only one outlier, belonging to the Infubinol dataset was found. This was confirmed by plotting the data from the 'tumor' dataframe in a box and whisker plot.<br>
