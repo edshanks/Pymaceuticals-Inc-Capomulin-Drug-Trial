@@ -33,9 +33,9 @@ In order to analyze the final results of the study, the 'merged_data' dataframe 
 
 The final tumor volumes for each mouse that underwent treatment with the drugs 'Capomulin', 'Ramicane', 'Infubinol', and 'Ceftamin' were then gathered from the 'max_time_data' dataframe and stored in 'tumor' dataframe. <br>
 
-![](screenshots/final_tumor_volume.png)<br>
+![](screenshots/final_tumor_vol.png)<br>
 
-![](screenshots/final_tumor_volume_df.png)<br>
+![](screenshots/final_tumor_vol_df.png)<br>
 
 In order to test for outliers in the tumor volume data in the 'tumor' dataframe, the upper and lower quartiles and the interquartile range were calculated. For the purposes of this analysis, an outlier is defined as any data point whose value is greater or less than the the upper or lower quartiles, respectively, by at least a factor of 1.5 times the interquartile range.<br>
 
