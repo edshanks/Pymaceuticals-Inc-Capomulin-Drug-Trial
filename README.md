@@ -2,6 +2,7 @@
 In this study, 249 mice who were identified with SCC tumors received treatment with a range of drug regimens. Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of Pymaceuticals’ drug of interest, Capomulin, against the other treatment regimens. The gathered data was then cleaned, analyzed, and visualized using Python with the help of Matplotlib, Pandas, and Scipy.
 <h4>Data Sources</h4>
 The data for this project comes from two CSV files. The first CSV contains the metadata of the mice that participated in the drug trial. The metadata includes a mouse ID, weight, sex, age in months, and the drug regimin used to treat the mouse.<br>
+
 ![](screenshots/mouse_metadata.png)<br>
 
 The second CSV contains the results of the drug trial. The data is a time series which details the number of metastatic sites and tumor volume for a given mouse at a particular point in time. <br>
